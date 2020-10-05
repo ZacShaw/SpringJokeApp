@@ -9,8 +9,8 @@ import org.springframework.context.annotation.Configuration;
 public class NorrisQuotes {
 
     @Bean
-    public ChuckNorrisQuotes chuckNorrisQuotes()
+    public NorrisQuotes chuckNorrisQuotes()
     {
-        return new ChuckNorrisQuotes();
+        return new NorrisQuotes();
     }
 }

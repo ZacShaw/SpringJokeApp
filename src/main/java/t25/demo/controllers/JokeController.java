@@ -11,19 +11,4 @@ import t25.demo.services.JokeService;
 @Controller
 public class JokeController {
 
-    private JokeService joke_Service;
-
-    @Autowired
-    public JokeController(JokeService joke_Service){
-        this.joke_Service = joke_Service;
-    }
-
-    @RequestMapping({"/", ""})
-    public String showJoke(Model model)
-    {
-        model.addAttribute("joke", joke_Service.getJoke());
-
-        return "chucknorris";
-    }
-
 }
